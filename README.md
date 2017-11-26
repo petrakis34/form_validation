@@ -1,0 +1,1 @@
+# Academic Simple Form Validation with JS
