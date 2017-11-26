@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Validation Form</title> 
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="script.js"></script><!--  here we link the JS file -->
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<div id="wrapper"> <!-- we divide the wrapper in 2 parts -->
+			<div id="menu1"> <!-- here we set with id the 1st part to style later in CSS -->
+				<p>Form Validation</p>
+				<p>M401-S-FVA</p>
+				<p>Petrakis Nikolaos</p>
+				<p>SAE 2017</p>
+			</div>
+
+			<div id="menu2"> <!-- here we set with id the 2nd part to style later in CSS -->
+				<div id="menu2header"><!--  we set an id to style the header -->
+					<p>Παρακαλώ βάλτε τα στοιχεία σας:</p>
+				</div>
+
+				<div id="menu2main"><!--  here we set the id for aou form -->
+					<form>
+						<div id="menu2main1"> <!-- the 1st part of our form -->
+							<p>Ονοματεπώνυμο :</p>
+							<input type="text" name="name" placeholder="Το Ονοματεπώνυμο σας" id="nameToCheck" onkeyup="checkNameInput()"> <!-- our function to test the name input -->
+							<p class="valid" id="namechecked"></p> <!-- here we link to js in order to show our tested result -->
+
+							<p>E-mail :</p>
+							<input type="text" name="email" placeholder="Το E-mail σας" id="emailToCheck" onkeyup="checkEmail()"> <!-- here we check the email input with seperate function-->
+							<p class="valid" id="emailchecked"></p> <!-- here we link to js in order to show our tested result -->
+							
+							<p>Βάλτε ξανά το E-mail σας :</p>
+							<input type="text" name="emailcheck" placeholder="Το E-mail σας ξανά" id="emailToCheckDupl" onkeyup="checkEmailDupl()"> <!-- here we set the id and function to check if our input email field is identical to the above -->
+							<p class="valid" id="emailcheckeddupl"></p> <!-- here we link to js in order to show our tested result -->
+							
+							<p>Το τηλέφωνο σας :</p>
+							<input type="text" name="telephone" placeholder="Το τηλέφωνο σας" id="telephoneToCheck" onkeyup="numbersToCheck()"> <!-- here we set the fuction to check telephone number -->
+							<p class="valid" id="telephonechecked"></p> <!-- here we link to js in order to show our tested result -->
+						</div>
+
+						<div id="menu2main2"> <!-- the 2nd part of our form -->
+
+							<p>Διεύθυνση :</p>
+							<input type="text" name="addressname" placeholder="Τη Διεύθυνση σας" id="addressToCheck" onkeyup="checkNameInput()">  <!-- our function to test the name input -->
+							<p class="valid" id="addresschecked"></p> <!-- here we link to js in order to show our tested result -->
+
+							<p>Αριθμός :</p>
+							<input type="text" name="addressnumber" placeholder="Τον Αριθμό της Διεύθυνσης " id="addressnumToCheck" onkeyup="numbersToCheck()"> <!-- here we set the fuction to check address number -->
+							<p class="valid" id="addressnumbercheck" ></p> <!-- here we link to js in order to show our tested result -->
+
+							<p>Περιοχή :</p>
+							<input type="text" name="city" placeholder="Τη περιοχή σας" id="addressAreaToCheck" onkeyup="checkNameInput()">  <!-- our function to test the name input -->
+							<p class="valid" id="addressareachecked"></p> <!-- here we link to js in order to show our tested result -->
+
+							<p>Ταχυδρομικός Κώδικας :</p>
+							<input type="text" name="postalcode" placeholder="Τον Τ.Κ. σας" id="postalcodeToCheck" onkeyup="numbersToCheck()"> <!-- here we set the fuction to check postal code -->
+							<p class="valid" id="postalcodecheck"></p> <!-- here we link to js in order to show our tested result -->
+						</div>
+					</form> <!-- end of form -->
+				</div><!--  end of main2main -->
+
+			</div><!--  end of menu2 -->
+			
+		</div><!--  end of wrapper -->
+	</body>
+</html><!--  end of html -->

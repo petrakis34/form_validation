@@ -1,0 +1,78 @@
+/*CSS Javascript*/
+@charset "utf-8";
+
+
+* { /*we reset margin and padding*/
+	margin: 0;
+	padding:0;
+}
+
+#wrapper {/* here we give size to wrapper*/
+	max-width: 1260px;
+	margin-left: 0;
+	margin-right: auto;
+	height: 2440px;
+	font-family: tahoma;
+	font-size: 140%; /*we increase font size with %*/
+}
+ 
+#menu1 {/* here we set the size of the 1st part of the left part of the web page*/
+	background-color: grey;
+	width: 25%;
+	height: 2440px;
+	color: white;
+	text-align:center;
+	padding-top: 5%;
+	float: left; /*we float left to set menu2 left again*/
+}
+
+#menu1 p{
+	padding-top: 2%;/* we set padding to all our menu1 <p>'s*/
+}
+
+#menu2 { /* here we set the size of the 2nd part of the right part of the web page*/
+	float: left; /*we float left to sit right next to menu1*/
+	width: 65%;
+	height: 2440px;
+	padding-top: 5%;
+	padding-left:0; 
+	margin-left:5%;
+}
+
+#menu2header p { /* we underline the header's p*/
+	text-decoration: underline;
+	font-size: 100%;
+}
+#menu2main {
+	font-size: 80%;
+	margin-top: 2%;
+}
+
+#menu2main1 p {
+	padding-top: 2%; /* we set padding to all our menu2main1 <p>'s*/
+}
+
+#menu2main1 { /*we set size to the 1st part of our form*/
+	height:2440px;
+	width: 45%;
+	float: left;
+}
+
+#menu2main2 { /*we set size to the 2nd part of our form*/
+	height:auto;
+	width: 45%;
+	float: left;
+	margin-left: 2%;
+	margin-top: 2%;
+}
+
+
+#menu2main2 p{ /* we set padding to all our menu2main2 <p>'s*/
+	padding-bottom: 2%;
+}
+ 
+.valid { /*we set the output js styling*/
+	color:#990000;
+	font-size: 80%;
+	padding-bottom: 2%;
+}
